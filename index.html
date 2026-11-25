@@ -4,9 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Solis &amp; Grain - Timber, Linen &amp; Ceramic Goods</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body id="top">
+<body>
 
   <header class="site-header">
     <div class="header-inner">
@@ -24,7 +25,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="top">
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-copy">
         <p class="hero-eyebrow">New autumn batch</p>
@@ -40,64 +41,79 @@
     <section class="products" id="products" aria-labelledby="products-title">
       <h2 id="products-title">Everyday staples</h2>
 
-      <ul class="product-grid">
+      <ul class="product-grid grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-4">
         <li class="product-card">
-          <article>
-            <img src="https://via.placeholder.com/220x160?text=Acacia+Bowl" alt="Carved Acacia Bowl on a wooden table" />
+          <article class="flex h-full flex-col rounded-2xl bg-[#FFFDF9] p-3.5 shadow-md">
+            <div class="product-media">
+              <img src="https://via.placeholder.com/220x160?text=Acacia+Bowl" alt="Carved Acacia Bowl on a wooden table" />
+              <span class="badge">Sale</span>
+            </div>
             <h3 class="product-title">Carved Acacia Bowl</h3>
             <p class="product-meta">Hand-turned solid acacia wood</p>
             <p class="product-price">$38</p>
-            <button class="btn btn-add" type="button">Add to cart</button>
+            <button class="btn btn-add mt-auto w-full" type="button">Add to cart</button>
           </article>
         </li>
 
         <li class="product-card">
-          <article>
-            <img src="https://via.placeholder.com/220x160?text=Chambray+Cushion" alt="Chambray Cushion Cover on a bench" />
+          <article class="flex h-full flex-col rounded-2xl bg-[#FFFDF9] p-3.5 shadow-md">
+            <div class="product-media">
+              <img src="https://via.placeholder.com/220x160?text=Chambray+Cushion" alt="Chambray Cushion Cover on a bench" />
+            </div>
             <h3 class="product-title">Chambray Cushion Cover</h3>
             <p class="product-meta">Pre-washed stone chambray</p>
             <p class="product-price">$34</p>
-            <button class="btn btn-add" type="button">Add to cart</button>
+            <button class="btn btn-add mt-auto w-full" type="button">Add to cart</button>
           </article>
         </li>
 
         <li class="product-card">
-          <article>
-            <img src="https://via.placeholder.com/220x160?text=Taper+Holder" alt="Ceramic Taper Holder on a shelf" />
+          <article class="flex h-full flex-col rounded-2xl bg-[#FFFDF9] p-3.5 shadow-md">
+            <div class="product-media">
+              <img src="https://via.placeholder.com/220x160?text=Taper+Holder" alt="Ceramic Taper Holder on a shelf" />
+              <span class="badge">Sale</span>
+            </div>
             <h3 class="product-title">Ceramic Taper Holder</h3>
             <p class="product-meta">Matte speckled stoneware</p>
             <p class="product-price">$22</p>
-            <button class="btn btn-add" type="button">Add to cart</button>
+            <button class="btn btn-add mt-auto w-full" type="button">Add to cart</button>
           </article>
         </li>
 
         <li class="product-card">
-          <article>
-            <img src="https://via.placeholder.com/220x160?text=Waffle+Throw" alt="Organic Waffle Throw draped over seating" />
+          <article class="flex h-full flex-col rounded-2xl bg-[#FFFDF9] p-3.5 shadow-md">
+            <div class="product-media">
+              <img src="https://via.placeholder.com/220x160?text=Waffle+Throw" alt="Organic Waffle Throw draped over seating" />
+            </div>
             <h3 class="product-title">Organic Waffle Throw</h3>
             <p class="product-meta">GOTS-certified organic cotton</p>
             <p class="product-price">$64</p>
-            <button class="btn btn-add" type="button">Add to cart</button>
+            <button class="btn btn-add mt-auto w-full" type="button">Add to cart</button>
           </article>
         </li>
 
         <li class="product-card">
-          <article>
-            <img src="https://via.placeholder.com/220x160?text=Water+Carafe" alt="Fluted Water Carafe beside a tumbler" />
+          <article class="flex h-full flex-col rounded-2xl bg-[#FFFDF9] p-3.5 shadow-md">
+            <div class="product-media">
+              <img src="https://via.placeholder.com/220x160?text=Water+Carafe" alt="Fluted Water Carafe beside a tumbler" />
+              <span class="badge">Sale</span>
+            </div>
             <h3 class="product-title">Fluted Water Carafe</h3>
             <p class="product-meta">Ribbed clear glass, 1L</p>
             <p class="product-price">$31</p>
-            <button class="btn btn-add" type="button">Add to cart</button>
+            <button class="btn btn-add mt-auto w-full" type="button">Add to cart</button>
           </article>
         </li>
 
         <li class="product-card">
-          <article>
-            <img src="https://via.placeholder.com/220x160?text=Wall+Shelf" alt="Rattan Wall Shelf mounted on a neutral wall" />
+          <article class="flex h-full flex-col rounded-2xl bg-[#FFFDF9] p-3.5 shadow-md">
+            <div class="product-media">
+              <img src="https://via.placeholder.com/220x160?text=Wall+Shelf" alt="Rattan Wall Shelf mounted on a neutral wall" />
+            </div>
             <h3 class="product-title">Rattan Wall Shelf</h3>
             <p class="product-meta">Natural rattan &amp; ash wood</p>
             <p class="product-price">$52</p>
-            <button class="btn btn-add" type="button">Add to cart</button>
+            <button class="btn btn-add mt-auto w-full" type="button">Add to cart</button>
           </article>
         </li>
       </ul>
@@ -135,6 +151,8 @@
     </div>
     <p class="footer-legal">Student practice build. © 2026 Solis &amp; Grain.</p>
   </footer>
+
+  <a class="to-top" href="#top" aria-label="Back to top">&uarr;</a>
 
 </body>
 </html>
